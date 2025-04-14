@@ -1,0 +1,11 @@
+footer {
+    padding: 20px 0;
+    background-color: var(--vz-footer-bg);
+    border-top: 1px solid var(--vz-footer-border);
+    margin-top: auto;
+}
+
+:host {
+    display: block;
+    margin-top: auto;
+}

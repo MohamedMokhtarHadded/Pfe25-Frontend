@@ -1,0 +1,169 @@
+/* Modern Room 3D Planner Styles */
+:root {
+  --primary-color: #2196f3;
+  --secondary-color: #1976d2;
+  --text-color: #333;
+  --bg-color: #f5f5f5;
+  --sidebar-bg: #fff;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-fluid {
+  padding: 0;
+  height: 100vh;
+  background: var(--bg-color);
+}
+
+.main-row {
+  height: 100%;
+  margin: 0;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background: var(--sidebar-bg);
+  box-shadow: var(--shadow);
+  padding: 20px 0;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Tabs */
+.nav-sidebar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-sidebar li {
+  margin: 8px 0;
+}
+
+.nav-sidebar .tab {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  margin: 0 12px;
+}
+
+.nav-sidebar .tab:hover {
+  background: rgba(33, 150, 243, 0.1);
+  color: var(--primary-color);
+}
+
+.nav-sidebar .tab i {
+  margin-left: auto;
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
+
+/* Context Menu */
+#context-menu {
+  background: var(--sidebar-bg);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 12px;
+  box-shadow: var(--shadow);
+}
+
+.panel {
+  border: none;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+}
+
+.panel-heading {
+  background: var(--primary-color);
+  color: white;
+  border-radius: 8px 8px 0 0;
+  padding: 12px 20px;
+}
+
+.panel-body {
+  padding: 20px;
+}
+
+/* Form Controls */
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-danger {
+  background: #f44336;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #d32f2f;
+  transform: translateY(-1px);
+}
+
+/* Texture Thumbnails */
+.texture-select-thumbnail {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.texture-select-thumbnail:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.texture-select-thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 3D View Enhancement */
+#viewer {
+  background: linear-gradient(to bottom right, #f5f5f5, #e0e0e0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .nav-sidebar {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-sidebar .tab {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .nav-sidebar .tab i {
+    margin: 8px 0 0;
+  }
+}
